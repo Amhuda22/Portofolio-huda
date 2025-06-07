@@ -1,0 +1,391 @@
+/* Memberi jarak dalam tiap section */
+section {
+    padding: 20px;
+  }
+  
+  /* Gaya untuk navigasi (menu utama) */
+  nav {
+    background-color: #e4e4ed; /* Warna latar belakang menu */
+    padding: 10px;
+    margin: 20px;
+    color: #000;
+    border-radius: 20px; /* Membulatkan sudut */
+  }
+  
+  /* Menyusun menu secara horizontal */
+  nav ul {
+    list-style: none; /* Menghilangkan bullet */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Setiap item menu */
+  nav ul li {
+    position: relative;
+    margin: 0 20px;
+  }
+  
+  /* Tautan dalam menu */
+  nav ul li a {
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    display: block;
+  }
+  
+  /* Efek hover pada menu */
+  nav ul li:hover > a {
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  
+  /* Submenu (dropdown) tersembunyi */
+  nav ul li ul {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #fcfcfd;
+    display: none;
+    flex-direction: column;
+    min-width: 150px;
+    z-index: 1;
+    border-radius: 5px;
+  }
+  
+  /* Tampilkan submenu saat hover */
+  nav ul li:hover ul {
+    display: flex;
+  }
+  
+  /* Gaya item submenu */
+  nav ul li ul li a {
+    padding: 10px;
+    font-size: 16px;
+    color: #050505;
+  }
+  
+  /* Efek hover submenu */
+  nav ul li ul li a:hover {
+    background-color: #cbcbcc;
+    color: rgb(8, 8, 8);
+  }
+  
+  /* Container untuk bagian beranda */
+  .container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 20px;
+    background-color: #ebe9e9;
+    flex-wrap: wrap;
+  }
+  
+  /* Gaya gambar pada beranda */
+  .photo img {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  /* Gaya teks */
+  .text {
+    max-width: 500px;
+  }
+  
+  /* Judul utama */
+  .text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  /* Menambahkan garis bawah pada nama */
+  .text h1 strong {
+    text-decoration: underline;
+  }
+  
+  /* Paragraf */
+  .text p {
+    font-size: 20px;
+  }
+  
+  .text p a {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  /* Responsif: tampilan sempit */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .photo img {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Container untuk bagian tentang saya */
+  .container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0e9e9;
+    border-radius: 20px;
+    height: 100%;
+  }
+  
+  /* Teks tentang saya */
+  .text {
+    max-width: 60%;
+    padding: 40px;
+  }
+  
+  /* Judul bagian tentang saya */
+  .text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  /* Paragraf biodata */
+  .text p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Gambar bagian tentang saya */
+  .photo {
+    max-width: 35%;
+    width: 400px;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  /* Responsif bagian tentang saya */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text, .photo {
+      max-width: 100%;
+    }
+  
+    .text h1 {
+      margin-top: 20px;
+    }
+  }
+  
+  /* Container portofolio */
+  .portofolio-container {
+    margin: 0px;
+    padding: 10px;
+    background-color: #10113ce2;
+    text-align: center;
+  }
+  
+  /* Gaya tabel portofolio */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  /* Gaya sel */
+  th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    vertical-align: top;
+    text-align: center;
+  }
+  
+  /* Judul tabel */
+  th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Gambar dalam sel */
+  td img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Responsif tabel */
+  @media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+  
+    td {
+      margin-bottom: 15px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+    }
+  
+    td img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Grid opini */
+  .opini-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+  }
+  
+  /* Kotak opini */
+  .opini-item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .opini-item:hover {
+    transform: translateY(-5px); /* Efek naik */
+  }
+  
+  .opini-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .opini-text {
+    padding: 15px;
+  }
+  
+  .opini-text h3 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .opini-text p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 600px) {
+    .opini-text h3 {
+      font-size: 16px;
+    }
+  }
+  
+  /* Bagian hubungi saya */
+  .hubungi-saya {
+    padding: 40px 20px;
+    background-color: #f3f3f3;
+  }
+  
+  /* Judul */
+  .hubungi-saya h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  /* Kontainer form dan peta */
+  .kontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* Formulir kontak */
+  .form-kontak {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Label input */
+  .form-kontak label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Input dan textarea */
+  .form-kontak input,
+  .form-kontak textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  /* Tombol kirim */
+  .form-kontak button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .form-kontak button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Gaya iframe peta */
+  .maps {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .maps iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    border: 0;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #f6f6f9;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer p {
+    font-size: 16px;
+  }
+  

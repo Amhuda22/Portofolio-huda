@@ -1,0 +1,54 @@
+/* --- FORM STYLING ELEGAN DAN RESPONSIF --- */
+
+body {
+    background-color: #f2f6fc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background: linear-gradient(to right, #007bff, #4b9eff);
+    padding: 15px 30px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .navbar-brand {
+    font-size: 24px;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+/* ===== Form Container ===== */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+/* ===== Form Elements ===== */
+form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+input[type="text"],
+input[type="file"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #fefefe;
+}
+
+   
